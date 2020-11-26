@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>Assignment- ES6 PProgramming</title>
+	<link rel="stylesheet" href="home.css">
+</head>
+<body>
+	<div >
+		<header>
+			BigBangTheory
+		</header>
+		<div class="main__layout">
+			<div class="search_episodes">
+				<p class="search_episodes_using_number">
+					Search episodes using Episode Number and Season Number
+				</p>
+				<br/>
+				<input type="number" id="episode_number" placeholder="Episode number">
+				<br/>
+				<br/>
+				<input type="number" id="episode_season" placeholder="Season Number">
+				<br/>
+				<br/>
+				<button class="search_button" onclick="getUserInput()">Search</button>
+			</div>
+			<br/>
+			<br/>
+	
+	
+	
+			<div class="results">
+				<h3>Results : </h3>
+				<br/>
+				<label style="font-weight: bold;">Name : </label>
+				<br/>
+				<p id="name_results" class="name"></p>
+				<br/>
+				<label style="font-weight: bold;">Summary : </label>
+				<p id="summary_results" class="summary"></p>
+			</div>
+		</div>
+
+		<div class="main__layout">
+			<div class="search_episodes">
+				<p class="search_episodes_using_number">
+					Search episodes using Episode ID
+				</p>
+				<br/>
+				<input type="number" id="episode_id" placeholder="Episode ID">
+				
+				<br/>
+				<br/>
+				<button class="search_button" onclick="getId()">Search</button>
+			</div>
+			<br/>
+			<br/>
+	
+	
+	
+			<div class="results">
+				<h3>Results : </h3>
+				
+				<label id="id_error"></label>
+				<br/>
+				<br/>
+				<label style="font-weight: bold;">Episode  Name : </label>
+				<br/>
+				<p id="id_results" class="name"></p>
+				<br/>
+				<label style="font-weight: bold;">Season : </label>
+				<br/>
+				<p id="id_season" class="name"></p>
+			</div>
+		</div>
+		
+
+		<div class="main__layout">
+			<div class="search_episodes">
+				<p class="search_episodes_using_number">
+					Search episodes by Name
+				</p>
+				<br/>
+				<input type="text" id="episode_name" placeholder="Episode Name">
+				
+				<br/>
+				<br/>
+				<button class="search_button" onclick="getName()">Search</button>
+			</div>
+			<br/>
+			<br/>
+	
+	
+	
+			<div class="results">
+				<h3>Results : </h3>
+				
+				<label id="name_error"></label>
+				<br/>
+				<br/>
+				<label style="font-weight: bold;">Episode  Number : </label>
+				<br/>
+				<p id="name_number" class="name"></p>
+				<br/>
+				<label style="font-weight: bold;">Season : </label>
+				<br/>
+				<p id="name_season" class="name"></p>
+			</div>
+		</div>
+	</div>
+	
+    <script src="bigBangTheory.js"></script>
+</body>
+</html>
